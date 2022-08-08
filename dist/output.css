@@ -594,7 +594,7 @@ header {
 }
 
 #heroImage {
-  background-image: url(./dist/assets/images/baby_2.jpeg);
+  background-image: url(./assets/images/baby_2.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: auto;
@@ -910,7 +910,7 @@ header {
 }
 
 #contactImage {
-  background-image: url(./dist/assets/images/contact.jpeg);
+  background-image: url(./assets/images/contact.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: auto;
