@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/*
+color codes
+black: #12130F
+gray: #5F758E
+red: #DC0413
+blue: #1985A1
+lemon: #FAF0CA
+*/
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	color: #5f758e;
+}
+
+h1 {
+	font-family: "Open Sans", sans-serif;
+}
+section {
+	scroll-margin-top: 11rem;
+}
+@layer components {
+	header {
+	}
+	.menuItem {
+		@apply block sm:inline uppercase p-4 md:p-4 hover:border-b-[#DC0413] hover:border-y-4 duration-200 hover:rounded-sm ease-in-out font-bold tracking-widest text-[#5F758E];
+	}
+	
+
+
+	#heroImage {
+		background-image: url(./dist/assets/images/baby_2.jpeg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		@apply flex-col w-full max-w-screen-xl px-4 mx-auto mt-20 rounded-sm shadow-lg md:flex sm:mt-44 md:h-96 md:items-center md:justify-between md:flex-col;
+	}
+	#heroImage h1,
+	h2 {
+		font-family: "Open Sans", sans-serif;
+		@apply p-10 font-bold tracking-wide text-center bg-white rounded-b-sm shadow-xl opacity-90 md:text-xl;
+	}
+
+	#heroImage div {
+		@apply p-8 mb-6 text-center bg-white rounded-sm opacity-90;
+	}
+	#heroImage p {
+		@apply pb-12;
+	}
+	#heroImage a {
+		@apply p-6  hover:bg-[#1985A1] rounded-sm shadow-lg text-white bg-[#DC0413] font-bold;
+	}
+
+	#leistungen {
+		@apply flex-row w-full h-full max-w-screen-xl px-4 mx-auto mt-8 md:justify-between sm:flex sm:gap-4 sm:mt-16;
+	}
+	.card {
+		@apply mt-8 duration-300 rounded-sm shadow-lg hover:scale-110;
+	}
+	.card h2 {
+		@apply h-24 text-center align-middle md:h-28 bg-[#1985A1] text-white;
+	}
+	.card p {
+		@apply p-2 text-center align-middle md:p-5;
+	}
+	#verein {
+		@apply flex-row w-full h-full max-w-screen-xl px-4 mx-auto mt-8 rounded-sm md:justify-between sm:flex sm:gap-4 sm:mt-24;
+	}
+	#verein h2,
+	h3 {
+		@apply bg-[#DC0413] text-3xl text-white uppercase tracking-wider text-center mb-4;
+	}
+	#verein h3 {
+		@apply bg-[#1985A1] text-lg p-2 text-white uppercase tracking-wider text-center;
+	}
+	#verein p,
+	li {
+		@apply p-2;
+	}
+	#team {
+		@apply max-w-screen-xl px-4 mx-auto md:mt-16 md:items-center md:justify-between;
+	}
+	#team h2 {
+		@apply bg-[#1985A1] text-white text-center;
+	}
+	#team a {
+		@apply hover:text-[#1985A1] text-white text-center;
+	}
+	#teamCardWrapper {
+		@apply flex flex-col justify-around lg:gap-x-20 md:flex-row md:flex-wrap;
+	}
+	.imageCard {
+		@apply md:w-48 mt-10 text-center shadow-md bg-[#12130F] text-white rounded-md hover:scale-105 duration-300 opacity-90 hover:opacity-100;
+	}
+
+	.imageCardName {
+		@apply bg-[#1985A1] text-white;
+	}
+	.imageCardImage,
+	img {
+		@apply flex justify-center rounded-md;
+	}
+	#contactImage {
+		background-image: url(./dist/assets/images/contact.jpeg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		@apply flex w-full max-w-screen-xl px-4 mx-auto rounded-sm shadow-lg md:h-96 md:mt-16 md:items-center md:justify-between md:flex-row;
+	}
+
+	#contactImage h3 {
+		@apply bg-[#1985A1] p-10 opacity-80 uppercase rounded-md;
+	}
+	#contact {
+		@apply flex-row h-full max-w-screen-xl px-4 mx-auto mt-8 text-left lg:justify-between lg:flex sm:mt-16;
+	}
+	#contact h3 {
+		@apply p-1 mt-5 mb-5 rounded-md bg-[#1985A1];
+	}
+	#contact li {
+		@apply pt-3;
+	}
+	#contact p {
+		@apply py-10;
+	}
+
+	/* Form */
+	#contact form {
+		@apply w-full h-full;
+	}
+	#contactForm label {
+		@apply block mb-2 text-sm font-bold tracking-wide uppercase;
+	}
+	#contactform input {
+		@apply block w-full px-4 py-3 mb-3 leading-tight bg-gray-200 border rounded appearance-none focus:outline-none focus:bg-white;
+	}
+
+	/* Footer */
+	footer {
+		@apply bg-[#1985A1] text-white pb-10;
+	}
+
+	.footerWrapper {
+		@apply flex-col w-full h-full max-w-screen-xl mx-auto mt-8 md:justify-between sm:flex sm:flex-row sm:mt-16;
+	}
+	.footerWrapper h3 {
+		@apply px-3 py-5 text-left bg-transparent rounded-sm shadow-lg;
+	}
+	.footerWrapper ul {
+		@apply px-2;
+	}
+	.footerWrapper a {
+		@apply md:p-1 hover:border-b-[#DC0413] hover:border-y-4 duration-200 hover:rounded-sm ease-in-out font-bold tracking-widest;
+	}
+}
